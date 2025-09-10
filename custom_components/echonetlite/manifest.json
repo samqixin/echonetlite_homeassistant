@@ -10,7 +10,8 @@
   "dependencies": [],
   "codeowners": [
     "@scottyphillips",
-    "@nao-pon"
+    "@nao-pon",
+    "@samqixin"
   ],
   "version":  "3.8.9",
   "iot_class": "local_polling"
