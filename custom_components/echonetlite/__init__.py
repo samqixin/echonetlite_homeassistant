@@ -70,8 +70,15 @@ from pychonet.HomeAirConditioner import (
     ENL_AIR_HORZ,
 )
 
-
+# 优先从 pychonet.version 读取；若不存在就兜底尝试 pychonet.__version__
+try:
+    from echonet.version import __version__ as PYE_VERSION
+except Exception:
+    PYE_VERSION = getattr(echonet, "__version__", "unknown")
+    
 _LOGGER = logging.getLogger(__name__)
+_LOGGER.warning(">>> pychonet version: %s; imported from: %s", PYE_VERSION, getattr(echonet, "__file__", "unknown"))
+
 PLATFORMS = [
     Platform.BINARY_SENSOR,
     Platform.SENSOR,
