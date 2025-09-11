@@ -5,7 +5,7 @@
   "config_flow": true,
   "documentation": "https://www.github.com/scottyphillips/echonetlite_homeassistant",
   "requirements": [
-    "pychonet @ git+https://github.com/samqixin/pychonet.git@feature/appendix-r"
+    "pychonet @ https://github.com/samqixin/pychonet/releases/download/hotfix/pychonet-2.6.18.post1+appendixr1-py3-none-any.whl"
   ],
   "dependencies": [],
   "codeowners": [
@@ -13,6 +13,6 @@
     "@nao-pon",
     "@samqixin"
   ],
-  "version":  "3.8.9",
+  "version":  "3.8.10",
   "iot_class": "local_polling"
 }
