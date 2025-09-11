@@ -5,7 +5,7 @@
   "config_flow": true,
   "documentation": "https://www.github.com/samqixin/echonetlite_homeassistant",
   "requirements": [
-    "pychonet @ https://github.com/samqixin/pychonet/releases/download/hotfix/pychonet-2.6.18.post1+appendixr1-py3-none-any.whl"
+    "pychonet @ https://github.com/samqixin/pychonet/releases/download/hotfix/pychonet-2.6.20-py3-none-any.whl"
   ],
   "dependencies": [],
   "codeowners": [
