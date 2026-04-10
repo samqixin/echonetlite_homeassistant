@@ -671,7 +671,7 @@ class ECHONETConnector:
             ENABLE_SUPER_ENERGY_DEFAULT.get(self._eojgc, {}).get(self._eojcc, True),
         )
         # General purpose data items
-        flags = [ENL_STATUS, ENL_TIMER_SETTING]
+        flags = []
         if _enabled_super_energy:
             _enl_super_codes = ENL_SUPER_CODES
         else:
@@ -686,10 +686,8 @@ class ECHONETConnector:
             if item in _epc_keys:
                 flags.append(item)
 
-        seen = set()
         for value in flags:
-            if value in self._getPropertyMap and value not in seen:
-                seen.add(value)
+            if value in self._getPropertyMap:
                 self._update_flags_full_list.append(value)
                 self._update_data[value] = None
 
